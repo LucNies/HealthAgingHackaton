@@ -25,9 +25,9 @@ class Vision(object):
 		self.service = discovery.build('vision', 'v1', credentials=self.credentials)
 	
 	def classify(self, image):
-	"""
-	Sends an image to the Google Vision Cloud, and recieves the json response/classification
-	"""
+		"""
+		Sends an image to the Google Vision Cloud, and recieves the json response/classification
+		"""
 		#create request
 		image_content = base64.b64encode(image.read())
 		service_request = self.service.images().annotate(body={
