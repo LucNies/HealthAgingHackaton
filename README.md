@@ -6,6 +6,8 @@ Install:
 
 Open commandline and run:
 
+pip install tqdm
+
 pip install --upgrade watson-developer-cloud
 
 pip install --upgrade google-api-python-client
